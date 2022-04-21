@@ -10,6 +10,7 @@ class Transpose
     System.out.println("Enter number of columns");
     col=in.nextInt();
     int a[][]=new int[row][col];
+    int t[][]=new int[row][col];
     System.out.println("Enter elements in matrix ");
     for(i=0;i<row;i++)
     {
@@ -25,7 +26,7 @@ class Transpose
         {
             if(i==j)
             {
-                a[j][i]=a[i][j];
+                t[i][j]=a[j][i];
             }
         }
     }
@@ -34,7 +35,7 @@ class Transpose
     {
         for(j=0;j<col;j++)
         {
-            System.out.println(+a[j][i]);
+            System.out.println(+t[i][j]);
         }
     }
     
